@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [status, setStatus] = useState(null); // Track form submission status
@@ -29,7 +29,7 @@ function Contact() {
 
       const data = await response.json();
       if (response.ok) {
-        setStatus("Message sent successfully! ");
+        setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" }); // Clear form
       } else {
         setStatus(data.message || "Something went wrong. ❌");

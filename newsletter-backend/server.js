@@ -3,11 +3,52 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const PocketBase = require("pocketbase").default;
 const sgMail = require("@sendgrid/mail");
+const nodemailer = require('nodemailer');
 require("dotenv").config(); // Load environment variables from .env file
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+
+// Create a transporter object using Gmail settings
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'salmazouiten0222@gmail.com', // Your Gmail email address
+    pass: 'ohll jswg xwqa efnb',          // Gmail app password
+  },
+});
+
+// Contact form API endpoint
+app.post("/contact", async (req, res) => {
+  const { name, email, message } = req.body;
+
+  // Check if the fields are provided
+  if (!name || !email || !message) {
+    return res.status(400).json({ message: "All fields are required." });
+  }
+
+  const mailOptions = {
+    from: email,   // User's email address (this is dynamic)
+    to: 'salmazouiten@outlook.de', // Your Gmail address to receive messages
+    subject: `Message from ${name}`,
+    text: message, // Text content
+    html: `<p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong> ${message}</p>`, // HTML content
+  };
+
+  try {
+    // Send email
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ message: 'Message sent successfully!' });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ message: 'Failed to send message.' });
+  }
+});
+
+
 
 // Initialize PocketBase client
 const pb = new PocketBase("http://127.0.0.1:8090");
