@@ -1,0 +1,891 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./assets/Sentient_Complete/Fonts/OTF/Sentient-Light.woff2') format('woff2'),
+         url('./assets/Sentient_Complete/Fonts/OTF/Sentient-Light.woff') format('woff'),
+         url('./assets/Sentient_Complete/Fonts/OTF/Sentient-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stardom';
+    src: url('./assets/Stardom_Complete/Fonts/OTF/Stardom-Regular.woff2') format('woff2'),
+         url('./assets/Stardom_Complete/Fonts/OTF/Stardom-Regular.woff') format('woff'),
+         url('./assets/Stardom_Complete/Fonts/OTF/Stardom-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satochi';
+    src: url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gambarino';
+    src: url('./assets/Gambarino_Complete/Fonts/OTF/Gambarino-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gambetta';
+    src: url('./assets/Gambetta_Complete/Fonts/OTF/Gambetta-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header page */
+
+.sign-up-inbox {
+    
+    background-color: rgb(45, 17, 36); /* dark purple background */
+    color: #f4f9f3;            /* White text color */
+    text-align: center;        /* Center the text */
+    padding: 18px; 
+    font-size: 20px;  
+    margin-bottom: 3%;
+    
+
+}
+.sign-up-inbox a {
+    color: #f4f9f3;
+    font-style: normal;
+}
+
+/* Footer Container */
+.site-footer {
+    background-color: #2d1124; /* Dark purple background */
+    color: #fff; /* White text color */
+    padding: 30px 10px; /* Spacing around the footer */
+    font-family: Arial, sans-serif; /* Font style */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items at the top */
+    text-align: left; /* Default left alignment */
+    margin-top: 5%;
+}
+
+    /* Footer Links Section */
+    .footer-links {
+        display: flex; /* Use Flexbox layout */
+        flex-wrap: wrap; /* Wrap for smaller screens */
+        text-align: start; /* Default alignment */
+        justify-content: start; /* Center by default */
+        margin-bottom: 10px; /* Space below the links */
+        margin-top: 4%;
+        
+    }
+
+
+    /* Footer Links List */
+    .footer-links ul {
+        display: flex; /* Arrange list items in a row */
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        gap: 30px; /* Space between list items */
+        flex-direction: row;
+        text-align: center;
+    }
+
+
+    .footer-links li a {
+        font-size: 18px; /* Link text size */
+        color: #fff; /* Default link color */
+        text-decoration: none; /* Remove underline */
+        font-family: 'Gambetta' , serif;
+        text-transform: uppercase;
+
+    }
+
+    .footer-links li a:hover {
+        color: #fa12b6; /* Pink highlight on hover */
+    }
+
+    /* Footer Subscription Section */
+    .footer-search {
+        display: flex; /* Flexbox for layout */
+        flex-direction: column; /* Stack description and form vertically */
+        align-items: center; /* Center elements horizontally */
+        text-align: center; /* Center text content */
+        margin-bottom: 30px; /* Space below the subscription section */
+        width: 50%; /* Ensure it takes full width */
+    }
+
+    .footer-search h3 {
+        font-size: 20px; /* Smaller heading */
+        text-transform: uppercase; /* Uppercase text */
+        margin-bottom: 5%; /* Remove margin */
+        font-family: 'Gambetta' , serif;
+
+       
+    }
+
+    /* Footer Logo Section */
+    .footer-copyright {
+        flex: 1; /* Take up available space */
+        display: flex; /* Flexbox for alignment */
+        flex-direction: column; /* Stack logo and text */
+        align-items: center; /* Center align logo and text */
+        text-align: center; /* Center text alignment */
+    }
+
+    /* Footer Logo */
+    .footer-logo {
+        display: block; /* Treat the logo as a block element */
+        margin: 20px auto 10px; /* Center logo and add spacing */
+        max-width: 200px; /* Limit width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Footer Copyright Section */
+    .footer-copyright {
+        text-align: center; /* Center align text */
+        font-size: 14px; /* Smaller text size */
+        margin-top: 1.5%; /* Space above copyright text */
+        color: #aaa; /* Light gray color */
+    }
+
+/* Header */
+.header-container {
+    display: flex; /* Use Flexbox for alignment */
+    align-items: center; /* Vertically align logo and nav bar */
+    padding: 10px 20px; /* Add some padding for spacing */
+    }
+    
+    /* Logo image */
+    .header-container img {
+        width: 350px;
+        height: 190px;
+        margin-left: 20px;
+    }
+    
+    
+    /* Navigation bar */
+    .navigation-bar {
+        width: 100%;
+        align-items: center; /* Vertically align navigation and search box */
+    }
+    
+    /* Home bar */
+    .home-bar {
+        list-style-type: none; /* Remove default list bullets */
+        margin: 0; /* Remove any default margins */
+        padding: 0; /* Remove default padding */
+        display: flex; /* Align the list items horizontally */
+        flex-direction: row; /* Stack items horizontally on desktop */
+        gap: 50px; /* Add space between the list items */
+        font-family: 'Gambetta' , serif;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        font-size: 25px;
+        padding-left: 10%;
+        text-transform: uppercase;
+    }
+    
+    /* Home bar links */
+    .home-bar a {
+        text-decoration: none; /* Remove link underline */
+        color: #210321; /* Add a color to the list items */
+        transition: color 0.2s ease; /* Smooth color change on hover */
+    }
+    
+    .home-bar a:hover {
+    color: #a12b6c;
+}
+
+
+/* Search box */
+    .search-box {
+    display: flex; /* Align label and input horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add space between the label and input */
+    padding-right: 40px; /* Optional padding for spacing */
+    }
+
+    /* Search label */
+    .search-label {
+        font-size: 25px; /* Font size */
+        color: #210321; /* Text color */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+        font-family: 'Times New Roman', Times, serif; /* Font style */
+    }
+
+    /* Search input */
+    .search-input {
+        width: 300px; /* Input box width */
+        padding: 8px 12px; /* Inner spacing */
+        font-size: 17px; /* Font size */
+        border: 1px solid #ccc; /* Border style */
+        border-radius: 4px; /* Rounded corners */
+        outline: none; /* Remove default outline */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .search-input:focus {
+        border-color: #fa12b6; /* Change border color on focus */
+        box-shadow: 0 0 5px rgba(250, 18, 182, 0.5); /* Add shadow effect on focus */
+    }
+    /* Dropdown Menu Styles */
+    .recipe-dropdown {
+        list-style: none;
+        padding: 10px 0;
+        margin: 5px 0 0; /* Add margin to create space between the input and the dropdown */
+        max-height: 200px; /* Limit the height */
+        overflow-y: auto; /* Add scrolling if needed */
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute; /* Position the dropdown relative to the search box */
+        width: 100%; /* Match the width of the input */
+        z-index: 1000; /* Ensure it’s above other elements */
+        top: calc(100% + 5px); /* Position the dropdown below the search box */
+        left: 0; /* Align with the left edge of the input */
+    }
+  
+  
+  .recipe-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .recipe-item:hover {
+    background-color: #f3f3f3; /* Highlight item on hover */
+  }
+  
+  .no-results {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+  
+
+/* Home page */
+.Home {
+    background-color:#f6f6f6; 
+    padding: 10px 0; 
+    font-size: 18px;
+}
+
+
+#first-sentence {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align text and lines vertically */
+    justify-content: center; /* Center the entire content horizontally */
+    gap: 15px; /* Add space between the text and the lines */
+    font-size: 22px; /* Customize font size */
+    font-weight: bold; /* Make the text bold */
+    color: #210321; /* Text color */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+    margin: 20px 0; /* Add spacing around the text */
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif; /* font style */
+  }
+  
+  #first-sentence::before,
+  #first-sentence::after {
+    content: ""; /* Add decorative lines */
+    flex: 1; /* Stretch the lines to fill available space */
+    height: 1px; /* Line thickness */
+    background-color: black; /* Line color */
+    width: calc(50% - 100px); /* Adjust the width of each line */
+
+}
+  
+
+.images {
+    display: flex; /* Enable flex layout */
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: nowrap; /* does not Allow images to wrap to the next line if there are too many */
+    gap: 2%; /* Optional: Add space between images */
+    background-color:#f6f6f6; 
+
+    
+}
+
+.images img:hover{
+    transform: scale(1.1);
+}
+
+.recipe-item {
+    text-align: center; /* Center align image and text */
+}
+  
+.recipe-item img {
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+
+}
+  
+.recipe-name {
+    margin-top: 5px; /* Space between image and text */
+    font-size: 20px; /* Font size for recipe name */
+    color: #210321; /* Choose a custom color for the recipe name*/
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    margin-bottom: 30%;
+
+}
+
+/* recipe template */
+
+.recipe-template {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #210321;
+    background-color:#f6f6f6;  
+    
+  }
+  
+  .recipe-title {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Gambetta' , serif;
+    word-spacing: 0;
+
+  }
+  
+  .star-rating {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .star-rating .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .star-rating .star.filled {
+    color: #fa12b6;
+  }
+  
+  .recipe-description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .recipe-image {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, if needed */
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .recipe-image img {
+    width: 50%;
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Ensures the image respects text alignment */
+
+  }
+  
+  .recipe-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .ingredients,
+  .instructions {
+    margin-top: 20px;
+
+  }
+  
+  .ingredients h2,
+  .instructions h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'MyCustomFont', serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ingredients ul{
+    margin: 10px 0 20px 20px;
+    list-style-type: none; /* Remove default list bullets */
+    font-size: 18px;
+
+  }
+
+  .instructions ol {
+    margin: 10px 0 20px 20px;
+    font-size: 18px;
+
+  }
+  
+  .instructions ol li {
+    margin-bottom: 10px;
+  }
+
+  .ingredients ul li.section-title {
+    margin-top: 20px; /* Add spacing above section titles */
+    margin-bottom: 5px;
+    font-weight: bold; /* Make section titles bold */
+    text-transform: uppercase; /* Capitalize section titles */
+    font-size: 20px; /* Slightly larger font for section titles */
+    color: #210321; /* Optional: Different color for section titles */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+  }
+  
+/* About page */
+
+#introphrase {
+    font-family: 'Times New Roman', Times, serif; /* Set a specific font */
+    font-size: 2rem; /* Customize font size */
+    font-weight: 6;
+    color: #260e22; /* Choose a custom color */
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+    .intro-salma {
+        background-color:#f6f6f6; 
+        padding: 10px 30px; 
+        margin-left: 12%;
+        margin-right: 12%;
+
+    }
+
+    #salma {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.4rem; /* Adjust size as needed */
+        line-height: 1.6; /* Improve readability */
+        font-weight: 2;
+        color: #200017; /* Choose a custom color */
+        text-align: center;
+}
+
+/* Contact page */ 
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto; /* Center the page content */
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: #210321;
+    text-align: center; /* Center align the content */
+  }
+  
+  .contact-header {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #2d1124; /* Dark purple */
+    font-family: "Gambetta", serif;
+    text-transform: uppercase;
+    
+  }
+  
+  .contact-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #390f2d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #d01096; /* Darker pink */
+  }
+  
+  .contact-social {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .contact-social a {
+    color: #460432;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .contact-social a:hover {
+    color: #d01096; /* Darker pink */
+  }
+  
+/* Container for the sign-up form */
+.signup-container {
+    max-width: 500px; /* Restrict form width */
+    margin: 50px auto; /* Center form on the page */
+    padding: 20px; /* Add padding around the form */
+    background-color: #ffffff; /* White background for the form */
+    border: 1px solid #ddd; /* Subtle border for definition */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center align form elements */
+}
+
+/* Logo styling */
+.signup-logo {
+    display: block; /* Makes the image a block element */
+    margin: 0 auto 20px; /* Center image and add spacing below */
+    max-width: 280px; /* Limit logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Form title */
+.signup-title {
+    font-family:'Times New Roman', Times, serif; /* Use a custom font for the title */
+    font-weight: normal;
+    font-size: 28px; /* Larger font size for emphasis */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Form structure */
+.signup-form {
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 25px; /* Add space between fields */
+}
+
+/* Form group (label + input) */
+.form-group {
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+/* Labels */
+.form-group label {
+    font-size: 20px; /* Label font size */
+    color: #333; /* Dark text color for labels */
+    padding-left: 10px;
+}
+
+/* Input fields */
+.input-field {
+    width: 95%; /* Almost full width */
+    padding: 10px; /* Inner padding for usability */
+    font-size: 14px; /* Text size in inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Slightly rounded corners */
+    outline: none; /* Remove focus outline */
+}
+
+.input-field:focus {
+    border-color: #fa12b6; /* Highlighted border on focus */
+    box-shadow: 0 0 5px rgba(250, 18, 182, 0.5); /* Glow effect */
+}
+
+/* Error messages */
+.error-message {
+    font-size: 12px; /* Smaller font size */
+    color: red; /* Highlight errors in red */
+    margin-top: 5px; /* Add space above error message */
+}
+
+/* Success message */
+.message-success {
+    font-size: 14px; /* Slightly larger font */
+    color: green; /* Green for success */
+    margin-bottom: 20px; /* Space below the message */
+}
+
+/* Submit button */
+.signup-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Inner padding for button */
+    background-color: rgb(45, 17, 36); /* Dark purple background */
+    color: white; /* White text color */
+    font-size: 16px; /* Larger font size for readability */
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif; /* Custom font for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.signup-button:hover {
+    background-color: #621b4d; /* Slightly darker purple on hover */
+}
+
+
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+
+   /* Hide Desktop Navigation */
+   .home-bar {
+        display: none;  
+    }
+
+    /* Show search box for mobile */
+    .search-box {
+        display: flex; /* Ensure it is visible */
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center align */
+        width: 80%; /* Full width */
+        padding: 10px;
+    }
+
+    /* Center the header container for small screens */
+    .header-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Add spacing between elements */
+    }
+
+    /* Logo Styling */
+    .header-container img {
+        width: 300px; /* Resize logo for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Show Burger Menu Button */
+    .menu-button {
+        display: block; /* Ensure the button is visible on small screens */
+        position: absolute; /* Position it independently within the header */
+        top: 10px; /* Align it closer to the top of the viewport */
+        right: 20px; /* Align it closer to the right edge of the viewport */
+        background: none; /* Remove any default background */
+        border: none; /* Remove border */
+        cursor: pointer; /* Add pointer cursor for interactivity */
+        color: #333; /* Default color for the icon */
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+
+    /* Show Burger Menu Button */
+    .menu-button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #333;
+    }
+    
+
+    .mobile-menu li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        list-style-type: none; /* Remove default list bullets */
+
+    }
+
+    .mobile-menu li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        font-size: 16px;
+    }
+
+    .mobile-menu li a:hover {
+        background: #f4f4f4;
+    }
+    .mobile-menu li:last-child {
+        border-bottom: none; /* Remove border for the last item */
+    }
+    .images {
+        flex-wrap: wrap; /* Allow images to wrap to the next line if there are too many */
+        gap: 30px;
+    }
+
+    .images img {
+        width: 190px; /* Full-width images on mobile */
+        height: 200px;
+        max-width: 150px; /* Smaller images for mobile */
+        
+        
+    }
+
+    .recipe-name {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+    
+    #first-sentence {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    #Recipes {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    .signup-container {
+        width: 90%; /* Use most of the screen width */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .signup-logo {
+        max-width: 150px; /* Reduce logo size */
+    }
+
+    .signup-title {
+        font-size: 20px; /* Smaller title size */
+    }
+
+    .input-field {
+        font-size: 12px; /* Adjust input text size */
+    }
+
+    .signup-button {
+        font-size: 14px; /* Slightly smaller button text */
+    }
+
+    .site-footer {
+        flex-direction: column; /* Stack all sections vertically */
+        align-items: center; /* Center align all items */
+        
+    }
+
+    .footer-links {
+        margin-bottom: 20px; /* Add space below */
+        margin-top: 10%;
+        margin: 0;
+        max-width: 490px;
+    }
+    .footer-links ul {
+        gap: 13px;
+    }
+
+    .footer-search {
+        text-align: center; /* Center align everything */
+        padding: 0 10px; /* Add some padding for smaller screens */
+        width: 100%;
+    }
+
+    .footer-logo{
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-copyright {
+        margin-top: 20px; /* Add space above */
+    }
+}
+
+
+/* Responsive Adjustments for Tablet Screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1100px) {
+    #logo {
+        font-size: 45px; /* Adjust logo size for tablets */
+        padding: 15px;
+    }
+
+    .navigation-bar {
+        flex-direction: row; /* Keep navigation items in a row */
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .home-bar {
+        gap: 20px; /* Adjust spacing between navigation links */
+        font-size: 22px; /* Slightly smaller font size for tablets */
+        justify-content: flex-start; /* Align links to the left */
+    }
+    .home-bar a {
+        font-size: 22px;
+    }
+
+    .search-box {
+        flex-direction: row; /* Align search label and box horizontally */
+        margin-top: 0;
+        margin-right: 20px;/* Push search box to the right*/
+        align-items: center;
+        gap: 10px;
+        padding-left: 8px;
+        width: 130px;
+    }
+
+    .search-label {
+        font-size: 22px; /* Adjust label font size */
+        padding: 0;
+        
+        
+    }
+
+    .search-input {
+        width: 200px; /* Adjust input box width for tablets */
+    }
+
+    .images img {
+        width: 200px; /* Adjust image size for tablets */
+        height: 250px;
+    }
+
+    .recipe-name {
+        font-size: 18px; /* Adjust font size for recipe names */
+    }
+
+    #first-sentence {
+        font-size: 22px; /* Adjust text size for tablets */
+        padding: 25px;
+    }
+
+    #Recipes {
+        font-size: 22px; /* Adjust section title size */
+        padding-left: 80px; /* Reduce padding for tablet screens */
+    }
+}
+
+/* --- Desktop Styles (min-width: 768px) --- */
+@media (min-width: 768px) {
+    
+    /* Hide Burger Menu Button */
+    .menu-button {
+        display: none;
+    }
+
+    /* Ensure Mobile Menu is Hidden */
+    .mobile-menu {
+        display: none;
+    }
+}
