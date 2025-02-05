@@ -29,7 +29,7 @@ function Contact() {
 
       const data = await response.json();
       if (response.ok) {
-        setStatus("Message sent successfully!");
+        setStatus(" Message sent successfully!");
         setFormData({ name: "", email: "", message: "" }); // Clear form
       } else {
         setStatus(data.message || "Something went wrong. ❌");

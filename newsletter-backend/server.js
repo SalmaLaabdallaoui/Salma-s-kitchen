@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'salmazouiten0222@gmail.com', // Your Gmail email address
-    pass: 'ohll jswg xwqa efnb',          // Gmail app password
+    pass: process.env.EMAIL_PASS,          // app password
   },
 });
 
@@ -41,10 +41,10 @@ app.post("/contact", async (req, res) => {
   try {
     // Send email
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: 'Message sent successfully!' });
+    res.status(200).json({ message: '✅ Message sent successfully!' });
   } catch (error) {
     console.error('Error:', error);
-    res.status(500).json({ message: 'Failed to send message.' });
+    res.status(500).json({ message: '❌ Failed to send message.' });
   }
 });
 
