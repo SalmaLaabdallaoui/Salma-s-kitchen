@@ -36,7 +36,7 @@ function Paella() {
 
   return (
     <RecipeTemplate
-      title="Paella Recipe"
+      title=" Spanish Paella"
       description="A classic Spanish seafood paella packed with flavorful seafood, rice, and spices. Perfect for a festive gathering or special dinner."
       imagePath="/images/paella.jpg"
       prepTime="30 minutes"

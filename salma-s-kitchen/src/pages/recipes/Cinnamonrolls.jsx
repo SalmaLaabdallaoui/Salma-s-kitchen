@@ -42,7 +42,7 @@ function CinnamonRolls() {
 
   return (
     <RecipeTemplate
-      title="Cinnamon Rolls Recipe"
+      title="Cinnamon Rolls"
       description="Fluffy, gooey cinnamon rolls topped with creamy cream cheese icing. Perfect for breakfast or dessert!"
       imagePath="/images/cinnamonrolls.jpg"
       prepTime="20 minutes"

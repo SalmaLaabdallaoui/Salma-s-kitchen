@@ -18,7 +18,7 @@ function Parfait() {
 
   return (
     <RecipeTemplate
-      title="Protein Yoghurt Recipe"
+      title="Raspberry Parfait"
       description="A simple, healthy, and flavorful protein-packed breakfast. Made with yogurt, protein powder, raspberries, and muesli, it’s perfect for a quick and nutritious start to your day."
       imagePath="/images/parfait.jpg"
       prepTime="5 minutes"

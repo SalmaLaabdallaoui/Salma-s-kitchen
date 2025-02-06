@@ -21,7 +21,7 @@ function Yoghurtbowl() {
 
   return (
     <RecipeTemplate
-      title="Protein Yoghurt Bowl Recipe"
+      title="Yoghurt Bowl"
       description="A delicious and nutritious protein-packed yoghurt bowl topped with muesli, dates, and berries. Perfect for a quick breakfast or snack!"
       imagePath="/images/yoghurtbowl.jpg"
       prepTime="5 minutes"

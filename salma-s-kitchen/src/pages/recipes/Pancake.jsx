@@ -22,7 +22,7 @@ function Pancake() {
 
   return (
     <RecipeTemplate
-      title="Protein Pancakes Recipe"
+      title="Protein Pancakes"
       description="Quick, easy, and nutritious protein pancakes made with spelt or oat flour, protein powder, and topped with fresh berries and honey. A perfect start to your day!"
       imagePath="/images/pancake.jpg"
       prepTime="5 minutes"

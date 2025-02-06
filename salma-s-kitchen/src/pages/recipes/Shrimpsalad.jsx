@@ -25,7 +25,7 @@ function ShrimpSalad() {
 
   return (
     <RecipeTemplate
-      title="Shrimp Salad Recipe"
+      title="Shrimp Salad"
       description="A simple and healthy shrimp salad recipe with spiced shrimp, creamy avocado, and a hint of salad spice. Perfect as a starter or light meal."
       imagePath="/images/shrimpsalad.jpg"
       prepTime="10 minutes"
