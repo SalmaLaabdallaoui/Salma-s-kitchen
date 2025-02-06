@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 
-function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
+function Contact() { // Create the Contact component
+  const [formData, setFormData] = useState({ // Initialize the form data
+    name: '', 
     email: '',
     message: '',
   });
@@ -19,75 +19,76 @@ function Contact() {
     e.preventDefault(); // Prevent default form submission
 
     try {
-      const response = await fetch("http://localhost:5001/contact", {
+      const response = await fetch("http://localhost:5001/contact", { // Send a POST request to the backend
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json", // Set the content type to JSON
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData), // Send the form data
       });
 
-      const data = await response.json();
-      if (response.ok) {
-        setStatus(" Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Clear form
+      const data = await response.json(); // Parse the JSON response
+      if (response.ok) { 
+        setStatus(" Message sent successfully!"); // Set success message
+        setFormData({ name: "", email: "", message: "" }); // Clear form data
       } else {
-        setStatus(data.message || "Something went wrong. ❌");
+        setStatus(data.message || "Something went wrong. ❌"); // Set error message
       }
-    } catch (error) {
+    } catch (error) { // Handle any errors that occur during the process
       setStatus("Failed to send message. ❌");
       console.error("Error:", error);
     }
   };
 
-  return (
-    <div className="contact-page">
-      <h1 className="contact-header">Have any Questions?</h1>
-      <p className="contact-text">
+  // Render the Contact component
+  return ( 
+    <div className="contact-page"> 
+      <h1 className="contact-header">Have any Questions?</h1> 
+      <p className="contact-text"> 
         Feel free to send any questions or inquiries directly to our email or contact us via Instagram below.
       </p>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit}> 
         <label htmlFor="name">Your Name:</label>
         <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          required
-          value={formData.name}
+          type="text" // Set the input type to text
+          id="name" // Set the input id to name
+          name="name" // Set the input name to name
+          placeholder="Enter your name" 
+          required 
+          value={formData.name} 
           onChange={handleChange}
         />
 
-        <label htmlFor="email">Your Email:</label>
+        <label htmlFor="email">Your Email:</label> 
         <input
-          type="email"
-          id="email"
-          name="email"
+          type="email" // Set the input type to email
+          id="email" // Set the input id to email
+          name="email" // Set the input name to email
           placeholder="Enter your email"
           required
           value={formData.email}
           onChange={handleChange}
         />
 
-        <label htmlFor="message">Your Message:</label>
+        <label htmlFor="message">Your Message:</label> 
         <textarea
-          id="message"
-          name="message"
-          placeholder="Type your message here"
-          rows="4"
+          id="message" // Set the input id to message
+          name="message" // Set the input name to message
+          placeholder="Type your message here" // Add a placeholder
+          rows="4" 
           required
           value={formData.message}
           onChange={handleChange}
         ></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit">Send Message</button> 
       </form>
 
-      {status && <p className="form-status">{status}</p>}
+      {status && <p className="form-status">{status}</p>} 
 
       <p className="contact-social">
-        Or reach out to us via Instagram:{" "}
+        Or reach out to us via Instagram:{" "} 
         <a
           href="https://www.instagram.com/salma_s_kitchen/"
           target="_blank"

@@ -3,15 +3,16 @@ import SearchBox from "./Searchbox"; // Import the reusable component
 
 function Footer() {
   return (
-    <footer className="site-footer">
-      <div className="footer-search">
+    <footer className="site-footer"> 
+      <div className="footer-search"> 
         <h3>Check out our recipes!</h3>
         
         {/* Use the reusable SearchBox component */}
         <SearchBox />
       </div>
 
-      <div className="footer-links">
+    
+      <div className="footer-links"> 
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
@@ -28,7 +29,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div className="footer-copyright">
+      <div className="footer-copyright"> 
         <img
           src="/images/DarkLogo.jpg"
           alt="Logo"

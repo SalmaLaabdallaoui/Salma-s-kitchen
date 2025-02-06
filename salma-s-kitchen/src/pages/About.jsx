@@ -1,8 +1,8 @@
-function About() {
+function About() {// Create the About component
   return (
-    <div className="intro-salma">
-      <h3 id="introphrase">About me</h3>
-      <p id="salma">
+    <div className="intro-salma"> 
+      <h3 id="introphrase">About me</h3> 
+      <p id="salma"> 
         Hey there, and welcome to Salma's Kitchen! As you might have guessed
         from the title, my name is Salma! I’m a 20-year-old computer science
         student with a deep passion for cooking and baking. Over the years, this

@@ -1,12 +1,12 @@
+/*Global Styles*/
 body, html {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    width: 100%;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-size: 14px; /* Base font size for the entire site */
+    width: 100%; /* Ensures body and html span the full viewport width */
 }
 
-
-
+/*Custom Fonts*/
 @font-face {
     font-family: 'MyCustomFont';
     src: url('./assets/Sentient_Complete/Fonts/OTF/Sentient-Light.woff2') format('woff2'),
@@ -24,18 +24,21 @@ body, html {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Satochi';
     src: url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Gambarino';
     src: url('./assets/Gambarino_Complete/Fonts/OTF/Gambarino-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Gambetta';
     src: url('./assets/Gambetta_Complete/Fonts/OTF/Gambetta-Regular.otf') format('truetype');
@@ -43,68 +46,61 @@ body, html {
     font-style: normal;
 }
 
-/* Header page */
-
+/* Sign-Up Inbox*/
 .sign-up-inbox {
-    
-    background-color: rgb(45, 17, 36); /* dark purple background */
-    color: #f4f9f3;            /* White text color */
-    text-align: center;        /* Center the text */
-    padding: 18px; 
-    font-size: 20px;  
-    margin-bottom: 3%;
-    
-
+    background-color: rgb(45, 17, 36); /* Dark purple background */
+    color: #f4f9f3; /* White text color */
+    text-align: center; /* Centers the text horizontally */
+    padding: 18px; /* Adds padding around the content */
+    font-size: 20px; /* Font size of the text */
+    margin-bottom: 3%; /* Space below the inbox */
 }
+
 .sign-up-inbox a {
-    color: #f4f9f3;
-    font-style: normal;
+    color: #f4f9f3; /* White text for links */
+    font-style: normal; /* Normal font style */
 }
 
-/* Footer Container */
+/*Footer Styling*/
 .site-footer {
     background-color: #2d1124; /* Dark purple background */
     color: #fff; /* White text color */
-    padding: 30px 10px; /* Spacing around the footer */
-    font-family: Arial, sans-serif; /* Font style */
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: space-between; /* Space between columns */
-    align-items: flex-start; /* Align items at the top */
-    text-align: left; /* Default left alignment */
-    margin-top: 5%;
-}
-
-    /* Footer Links Section */
-    .footer-links {
-        display: flex; /* Use Flexbox layout */
-        flex-wrap: wrap; /* Wrap for smaller screens */
-        text-align: start; /* Default alignment */
-        justify-content: start; /* Center by default */
-        margin-bottom: 10px; /* Space below the links */
-        margin-top: 4%;
-        
+    padding: 30px 10px; /* Adds padding around the footer */
+    font-family: Arial, sans-serif; /* Sets the footer font */
+    display: flex; /* Flexbox layout for alignment */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between; /* Spaces out columns evenly */
+    align-items: flex-start; /* Aligns items at the top */
+    text-align: left; /* Aligns text to the left by default */
+    margin-top: 5%; /* Adds space above the footer */
     }
 
+    /* Footer Links styling */
+    .footer-links {
+        display: flex; /* Flexbox layout */
+        flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        text-align: start; /* Aligns text to the left */
+        justify-content: start; /* Aligns links to the left */
+        margin-bottom: 10px; /* Adds space below the links */
+        margin-top: 4%; /* Adds space above the links */
+    }
 
     /* Footer Links List */
     .footer-links ul {
-        display: flex; /* Arrange list items in a row */
-        list-style: none; /* Remove bullet points */
-        padding: 0; /* Remove default padding */
-        gap: 30px; /* Space between list items */
-        flex-direction: row;
-        text-align: center;
+        display: flex; /* Aligns links horizontally */
+        list-style: none; /* Removes bullet points */
+        padding: 0; /* Removes default padding */
+        gap: 30px; /* Adds space between list items */
+        flex-direction: row; /* Ensures horizontal alignment */
+        text-align: center; /* Centers text within list items */
     }
 
-
     .footer-links li a {
-        font-size: 18px; /* Link text size */
-        color: #fff; /* Default link color */
-        text-decoration: none; /* Remove underline */
-        font-family: 'Gambetta' , serif;
-        text-transform: uppercase;
-
+        font-size: 18px; /* Font size of links */
+        color: #fff; /* White link color */
+        text-decoration: none; /* Removes underline from links */
+        font-family: 'Gambetta', serif; /* Custom font */
+        text-transform: uppercase; /* Makes text uppercase */
     }
 
     .footer-links li a:hover {
@@ -113,94 +109,92 @@ body, html {
 
     /* Footer Subscription Section */
     .footer-search {
-        display: flex; /* Flexbox for layout */
-        flex-direction: column; /* Stack description and form vertically */
-        align-items: center; /* Center elements horizontally */
-        text-align: center; /* Center text content */
-        margin-bottom: 30px; /* Space below the subscription section */
-        width: 50%; /* Ensure it takes full width */
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Stacks elements vertically */
+        align-items: center; /* Centers elements horizontally */
+        text-align: center; /* Centers text */
+        margin-bottom: 30px; /* Adds space below subscription section */
+        width: 50%; /* Takes up half the footer width */
     }
 
     .footer-search h3 {
-        font-size: 20px; /* Smaller heading */
-        text-transform: uppercase; /* Uppercase text */
-        margin-bottom: 5%; /* Remove margin */
-        font-family: 'Gambetta' , serif;
-
-       
+        font-size: 20px; /* Font size for heading */
+        text-transform: uppercase; /* Makes text uppercase */
+        margin-bottom: 5%; /* Adds space below the heading */
+        font-family: 'Gambetta', serif; /* Custom font */
     }
 
     /* Footer Logo Section */
     .footer-copyright {
-        flex: 1; /* Take up available space */
-        display: flex; /* Flexbox for alignment */
-        flex-direction: column; /* Stack logo and text */
-        align-items: center; /* Center align logo and text */
-        text-align: center; /* Center text alignment */
+        flex: 1; /* Expands to available space */
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items horizontally */
+        text-align: center; /* Centers text alignment */
     }
 
     /* Footer Logo */
     .footer-logo {
-        display: block; /* Treat the logo as a block element */
-        margin: 20px auto 10px; /* Center logo and add spacing */
-        max-width: 200px; /* Limit width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        display: block; /* Treats logo as block element */
+        margin: 20px auto 10px; /* Centers logo and adds spacing */
+        max-width: 200px; /* Limits logo width */
+        height: auto; /* Maintains aspect ratio */
     }
 
-    /* Footer Copyright Section */
+    /* Footer Copyright Text */
     .footer-copyright {
-        text-align: center; /* Center align text */
-        font-size: 14px; /* Smaller text size */
-        margin-top: 1.5%; /* Space above copyright text */
+        text-align: center; /* Centers text */
+        font-size: 14px; /* Smaller font size for copyright text */
+        margin-top: 1.5%; /* Adds space above copyright text */
         color: #aaa; /* Light gray color */
+}
+
+/*Header Styling*/
+.header-container {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    padding: 10px 20px; /* Adds spacing around header content */
     }
 
-/* Header */
-.header-container {
-    display: flex; /* Use Flexbox for alignment */
-    align-items: center; /* Vertically align logo and nav bar */
-    padding: 10px 20px; /* Add some padding for spacing */
-    }
-    
-    /* Logo image */
+    /* Logo Styles */
     .header-container img {
-        width: 350px;
-        height: 190px;
-        margin-left: 20px;
+        width: 350px; /* Logo width */
+        height: 190px; /* Logo height */
+        margin-left: 20px; /* Adds spacing on the left */
     }
-    
-    
-    /* Navigation bar */
+
+    /* Navigation Bar */
     .navigation-bar {
-        width: 100%;
-        align-items: center; /* Vertically align navigation and search box */
+        width: 100%; /* Takes full width */
+        align-items: center; /* Vertically centers navigation bar */
     }
-    
-    /* Home bar */
+
+    /* Home Bar Navigation */
     .home-bar {
-        list-style-type: none; /* Remove default list bullets */
-        margin: 0; /* Remove any default margins */
-        padding: 0; /* Remove default padding */
-        display: flex; /* Align the list items horizontally */
-        flex-direction: row; /* Stack items horizontally on desktop */
-        gap: 50px; /* Add space between the list items */
-        font-family: 'Gambetta' , serif;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        font-size: 25px;
-        padding-left: 10%;
-        text-transform: uppercase;
+        list-style-type: none; /* Removes default list bullets */
+        margin: 0; /* Removes default margins */
+        padding: 0; /* Removes default padding */
+        display: flex; /* Flexbox layout */
+        flex-direction: row; /* Aligns items horizontally */
+        gap: 50px; /* Adds space between items */
+        font-family: 'Gambetta', serif; /* Custom font */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+        font-size: 25px; /* Font size */
+        padding-left: 10%; /* Adds spacing on the left */
+        text-transform: uppercase; /* Uppercase text */
     }
-    
-    /* Home bar links */
+
+    /* Home Bar Links */
     .home-bar a {
-        text-decoration: none; /* Remove link underline */
-        color: #210321; /* Add a color to the list items */
+        text-decoration: none; /* Removes underline */
+        color: #210321; /* Custom color for links */
         transition: color 0.2s ease; /* Smooth color change on hover */
     }
-    
+
     .home-bar a:hover {
-    color: #a12b6c;
+        color: #a12b6c; /* Highlight color on hover */
 }
+
 
 
 /* Search box */
@@ -208,7 +202,7 @@ body, html {
     display: flex; /* Align label and input horizontally */
     align-items: center; /* Vertically align items */
     gap: 10px; /* Add space between the label and input */
-    padding-right: 40px; /* Optional padding for spacing */
+    padding-right: 40px; /* Padding for spacing */
     }
 
     /* Search label */
@@ -227,7 +221,7 @@ body, html {
         border: 1px solid #ccc; /* Border style */
         border-radius: 4px; /* Rounded corners */
         outline: none; /* Remove default outline */
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman', Times, serif; /* Font style */
     }
 
     .search-input:focus {
@@ -236,15 +230,15 @@ body, html {
     }
     /* Dropdown Menu Styles */
     .recipe-dropdown {
-        list-style: none;
-        padding: 10px 0;
+        list-style: none; /* Remove default list style */
+        padding: 10px 0; /* Add padding to the dropdown */
         margin: 5px 0 0; /* Add margin to create space between the input and the dropdown */
         max-height: 200px; /* Limit the height */
         overflow-y: auto; /* Add scrolling if needed */
-        background: white;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background: white; /* White background */
+        border: 1px solid #ddd; /* Add a border */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
         position: absolute; /* Position the dropdown relative to the search box */
         width: 100%; /* Match the width of the input */
         z-index: 1000; /* Ensure it’s above other elements */
@@ -254,10 +248,10 @@ body, html {
   
   
   .recipe-item {
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
+    padding: 10px 15px; /* Add padding around each item */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size for recipe items */
+    color: #333; /* Default text color */
   }
   
   .recipe-item:hover {
@@ -265,196 +259,209 @@ body, html {
   }
   
   .no-results {
-    padding: 10px 15px;
-    font-size: 14px;
-    color: #999;
-    text-align: center;
+    padding: 10px 15px; /* Add padding */
+    font-size: 14px; /* Font size for no results message */
+    color: #999; /* Light gray text color */
+    text-align: center; /* Center align the message */
 }
   
 
 /* Home page */
 .Home {
-    background-color:#f6f6f6; 
-    padding: 10px 0; 
-    font-size: 18px;
-}
+    background-color:#f6f6f6; /* Light gray background */
+    padding: 10px 0;  /* Add padding around the content */
+    font-size: 18px; /* Font size for the entire page */
+    }
 
 
-#first-sentence {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center align text and lines vertically */
-    justify-content: center; /* Center the entire content horizontally */
-    gap: 15px; /* Add space between the text and the lines */
-    font-size: 22px; /* Customize font size */
-    font-weight: bold; /* Make the text bold */
-    color: #210321; /* Text color */
-    text-transform: uppercase; /* Optional: Make the text uppercase */
-    margin: 20px 0; /* Add spacing around the text */
-    padding-top: 10px;
-    font-family: 'Times New Roman', Times, serif; /* font style */
-  }
-  
-  #first-sentence::before,
-  #first-sentence::after {
-    content: ""; /* Add decorative lines */
-    flex: 1; /* Stretch the lines to fill available space */
-    height: 1px; /* Line thickness */
-    background-color: black; /* Line color */
-    width: calc(50% - 100px); /* Adjust the width of each line */
-
-}
-  
-
-.images {
-    display: flex; /* Enable flex layout */
-    justify-content: center; /* Center the images horizontally */
-    flex-wrap: nowrap; /* does not Allow images to wrap to the next line if there are too many */
-    gap: 2%; /* Optional: Add space between images */
-    background-color:#f6f6f6; 
-
+    #first-sentence {
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center align text and lines vertically */
+        justify-content: center; /* Center the entire content horizontally */
+        gap: 15px; /* Add space between the text and the lines */
+        font-size: 22px; /* Customize font size */
+        font-weight: bold; /* Make the text bold */
+        color: #210321; /* Text color */
+        text-transform: uppercase; /* Optional: Make the text uppercase */
+        margin: 20px 0; /* Add spacing around the text */
+        padding-top: 10px; /* Add padding above the text */ 
+        font-family: 'Times New Roman', Times, serif; /* font style */
+    }
     
-}
+    #first-sentence::before,
+    #first-sentence::after {
+        content: ""; /* Add decorative lines */
+        flex: 1; /* Stretch the lines to fill available space */
+        height: 1px; /* Line thickness */
+        background-color: black; /* Line color */
+        width: calc(50% - 100px); /* Adjust the width of each line */
 
-.images img:hover{
-    transform: scale(1.1);
-}
+    }
 
-.recipe-item {
-    text-align: center; /* Center align image and text */
-}
-  
-.recipe-item img {
-    width: 300px;
-    height: 450px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
+    .images {
+        display: flex; /* Enable flex layout */
+        justify-content: center; /* Center the images horizontally */
+        flex-wrap: nowrap; /* does not Allow images to wrap to the next line if there are too many */
+        gap: 2%; /* Optional: Add space between images */
+        background-color:#f6f6f6; /* Light gray background */
 
-}
-  
-.recipe-name {
-    margin-top: 5px; /* Space between image and text */
-    font-size: 20px; /* Font size for recipe name */
-    color: #210321; /* Choose a custom color for the recipe name*/
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 20px;
-    margin-bottom: 30%;
+        
+    }
 
-}
+    .images img:hover{
+        transform: scale(1.1); /* Scale the image on hover */
+    }
 
-/* recipe template */
+    .recipe-item {
+        text-align: center; /* Center align image and text */
+    }
+    
+    .recipe-item img {
+        width: 300px; /* Set a custom width */
+        height: 450px; /* Set a custom height */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+        object-fit: cover; /* Ensures the image covers the area without stretching */
 
+    }
+    
+    .recipe-name {
+        margin-top: 5px; /* Space between image and text */
+        font-size: 20px; /* Font size for recipe name */
+        color: #210321; /* Choose a custom color for the recipe name*/
+        text-transform: uppercase; /* Capitalize recipe names */
+        font-family: 'Times New Roman', Times, serif; /* font style */
+        padding-top: 20px; /* Add padding above the recipe name */
+        margin-bottom: 30%; /* Add space below the recipe name */
+
+    }
+
+
+/* recipe template Container*/
 .recipe-template {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #210321;
-    background-color:#f6f6f6;  
-    
-  }
-  
-  .recipe-title {
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-family: 'Gambetta' , serif;
-    word-spacing: 0;
+    max-width: 800px; /* Limit the width of the recipe content to 800px */
+    margin: auto; /* Center the content horizontally on the page */
+    padding: 20px; /* Add padding around the content for spacing */
+    font-family: 'Times New Roman', Times, serif; /* Use a serif font for a classic look */
+    color: #210321; /* Set text color to a custom dark shade */
+    background-color: #f6f6f6; /* Light gray background for contrast */
+}
 
-  }
-  
-  .star-rating {
-    text-align: center;
-    margin: 10px 0;
-  }
-  
-  .star-rating .star {
-    font-size: 30px;
-    cursor: pointer;
-    color: #ccc;
-    transition: color 0.3s;
-  }
-  
-  .star-rating .star.filled {
-    color: #fa12b6;
-  }
-  
-  .recipe-description {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
-  .recipe-image {
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically, if needed */
+/*Recipe Title*/
+.recipe-title {
+    font-size: 36px; /* Set a large font size for the title */
+    text-align: center; /* Center-align the title */
+    text-transform: uppercase; /* Make all text uppercase for emphasis */
+    margin-bottom: 10px; /* Add spacing below the title */
+    font-family: 'Gambetta', serif; /* Use a decorative serif font for the title */
+    word-spacing: 0; /* Prevent additional spacing between words */
+}
+
+/*  Star Rating Section  */
+.star-rating {
+    text-align: center; /* Center-align the star rating */
+    margin: 10px 0; /* Add vertical spacing above and below */
+}
+
+/* Individual stars within the star rating */
+.star-rating .star {
+    font-size: 30px; /* Set size of stars */
+    cursor: pointer; /* Make stars clickable */
+    color: #ccc; /* Default gray color for stars */
+    transition: color 0.3s; /* Smooth color change on hover or selection */
+}
+
+/* Filled stars to indicate selected rating */
+.star-rating .star.filled {
+    color: #fa12b6; /* Highlight filled stars in pink */
+}
+
+/* --- Average Rating --- */
+.average-rating {
+    font-size: 12px; /* Smaller font size for average rating text */
+    margin-top: 10px; /* Add spacing above the text */
+    text-align: center; /* Center-align the text */
+}
+
+/* --- Recipe Description --- */
+.recipe-description {
+    font-size: 18px; /* Set a medium font size */
+    text-align: center; /* Center-align the description */
+    margin-bottom: 20px; /* Add spacing below the description */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+/* --- Recipe Image --- */
+.recipe-image {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Align image vertically */
     margin-bottom: 20px; /* Add spacing below the image */
-  }
+}
 
-  .recipe-image img {
-    width: 50%;
-    height: auto;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    display: inline-block; /* Ensures the image respects text alignment */
+/* Styling for the image within the recipe */
+.recipe-image img {
+    width: 50%; /* Set the image to take 50% of the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    display: inline-block; /* Ensure proper alignment */
+}
 
-  }
-  
-  .recipe-details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 10px;
-    text-align: center;
-    font-size: 18px;
-    margin: 20px 0;
-  }
-  
-  .ingredients,
-  .instructions {
-    margin-top: 20px;
+/*Recipe Details Section*/
+.recipe-details {
+    display: grid; /* Use a grid layout for details */
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    gap: 10px; /* Add spacing between grid items */
+    text-align: center; /* Center-align the details */
+    font-size: 18px; /* Set font size for detail text */
+    margin: 20px 0; /* Add vertical spacing around the details */
+}
 
-  }
-  
-  .ingredients h2,
-  .instructions h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: 'MyCustomFont', serif;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
-  
-  .ingredients ul{
-    margin: 10px 0 20px 20px;
-    list-style-type: none; /* Remove default list bullets */
-    font-size: 18px;
+/*  Ingredients and Instructions Section  */
+.ingredients,
+.instructions {
+    margin-top: 20px; /* Add spacing above the sections */
+}
 
-  }
+/* Section headings for ingredients and instructions */
+.ingredients h2,
+.instructions h2 {
+    font-size: 28px; /* Large font size for section titles */
+    margin-bottom: 10px; /* Add spacing below the titles */
+    text-align: center; /* Center-align the titles */
+    font-family: 'MyCustomFont', serif; /* Use a custom font for headings */
+    text-transform: uppercase; /* Make the titles uppercase */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
 
-  .instructions ol {
-    margin: 10px 0 20px 20px;
-    font-size: 18px;
+/* Ingredients List*/
+.ingredients ul {
+    margin: 10px 0 20px 20px; /* Add spacing around the list */
+    list-style-type: none; /* Remove default bullet points */
+    font-size: 18px; /* Set font size for list items */
+}
 
-  }
-  
-  .instructions ol li {
-    margin-bottom: 10px;
-  }
+/*  Instructions Ordered List  */
+.instructions ol {
+    margin: 10px 0 20px 20px; /* Add spacing around the ordered list */
+    font-size: 18px; /* Set font size for the instructions */
+}
 
-  .ingredients ul li.section-title {
+/* Individual list items within the instructions */
+.instructions ol li {
+    margin-bottom: 10px; /* Add spacing between steps */
+}
+
+/* Section titles within the ingredients list */
+.ingredients ul li.section-title {
     margin-top: 20px; /* Add spacing above section titles */
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Add spacing below section titles */
     font-weight: bold; /* Make section titles bold */
     text-transform: uppercase; /* Capitalize section titles */
     font-size: 20px; /* Slightly larger font for section titles */
-    color: #210321; /* Optional: Different color for section titles */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #210321; /* Custom color for section titles */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
 
-  }
-  
 /* About page */
 
 #introphrase {
@@ -483,408 +490,435 @@ body, html {
         text-align: center;
 }
 
-/* Contact page */ 
+/*  Contact Page Styling */
 .contact-page {
-    max-width: 800px;
-    margin: 0 auto; /* Center the page content */
-    padding: 20px;
-    font-family:'Times New Roman', Times, serif;
-    color: #210321;
-    text-align: center; /* Center align the content */
-  }
-  
-  .contact-header {
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: #2d1124; /* Dark purple */
-    font-family: "Gambetta", serif;
-    text-transform: uppercase;
-    
-  }
-  
-  .contact-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between form elements */
-    margin-bottom: 20px;
-  }
-  
-  .contact-form label {
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  .contact-form button {
-    padding: 10px 20px;
-    background-color: #390f2d;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-form button:hover {
-    background-color: #d01096; /* Darker pink */
-  }
-  
-  .contact-social {
-    font-size: 1rem;
-    margin-top: 20px;
-  }
-  
-  .contact-social a {
-    color: #460432;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .contact-social a:hover {
-    color: #d01096; /* Darker pink */
-  }
-  
-/* Container for the sign-up form */
+    max-width: 800px; /* Limit the maximum width of the contact section */
+    margin: 0 auto; /* Center the contact page content */
+    padding: 20px; /* Add padding for spacing */
+    font-family: 'Times New Roman', Times, serif; /* Set font style */
+    color: #210321; /* Set text color to dark purple */
+    text-align: center; /* Center-align all text */
+    }
+
+    /*  Contact Page Header */
+    .contact-header {
+        font-size: 35px; /* Large font size for the header */
+        margin-bottom: 20px; /* Add space below the header */
+        color: #2d1124; /* Dark purple color */
+        font-family: "Gambetta", serif; /* Use a serif font for styling */
+        text-transform: uppercase; /* Make text uppercase */
+    }
+    .contact-text {
+        font-size: 18px; /* Set font size for description text */
+        margin-bottom: 20px; /* Add space below the text */
+    }
+
+    /*  Contact Form Styling */
+    .contact-form {
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack form elements vertically */
+        gap: 15px; /* Add spacing between form elements */
+        margin-bottom: 20px; /* Add space below the form */
+    }
+
+    /* Label for form fields */
+    .contact-form label {
+        text-align: left; /* Align text labels to the left */
+        font-weight: bold; /* Make labels bold */
+    }
+
+    /* Input fields and text area for messages */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%; /* Make inputs full width */
+        padding: 10px; /* Add padding inside input fields */
+        font-size: 17px; /* Set font size for readability */
+        border: 1px solid #ccc; /* Add light gray border */
+        border-radius: 5px; /* Slightly round input field corners */
+        font-family: 'Times New Roman', Times, serif; /* Use serif font */
+    }
+
+    /*  Submit Button Styling  */
+    .contact-form button {
+        padding: 10px 20px; /* Add padding for button */
+        background-color: #390f2d; /* Dark purple background */
+        color: white; /* White text color */
+        font-size: 1rem; /* Set font size */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Round button corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s; /* Smooth transition effect */
+    }
+
+    /* Button Hover Effect */
+    .contact-form button:hover {
+        background-color: #d01096; /* Change to pink on hover */
+    }
+
+    /*  Instagram link Section  */
+    .contact-social {
+        font-size: 1rem; /* Set font size for social media section */
+        margin-top: 20px; /* Add space above social links */
+    }
+
+    /* Instagram Link */
+    .contact-social a {
+        color: #460432; /* Set link color to deep purple */
+        text-decoration: none; /* Remove underline from links */
+        font-weight: bold; /* Make links bold */
+        transition: color 0.3s; /* Smooth transition for color change */
+    }
+
+    /* Social Media Link Hover Effect */
+    .contact-social a:hover {
+        color: #d01096; /* Change to pink when hovered */
+}
+
+/*  Container for the Sign-Up Form  */
 .signup-container {
-    max-width: 500px; /* Restrict form width */
-    margin: 50px auto; /* Center form on the page */
-    padding: 20px; /* Add padding around the form */
-    background-color: #ffffff; /* White background for the form */
-    border: 1px solid #ddd; /* Subtle border for definition */
-    border-radius: 10px; /* Rounded corners for a modern look */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    text-align: center; /* Center align form elements */
-}
+    max-width: 500px; /* Limit the form width to 500px */
+    margin: 50px auto; /* Center the form horizontally on the page with top & bottom margin */
+    padding: 20px; /* Add padding inside the form container */
+    background-color: #ffffff; /* Set the background color to white */
+    border: 1px solid #ddd; /* Light gray border for subtle definition */
+    border-radius: 10px; /* Rounded corners for a modern, soft look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    text-align: center; /* Center-align the form elements */
+    }
 
-/* Logo styling */
-.signup-logo {
-    display: block; /* Makes the image a block element */
-    margin: 0 auto 20px; /* Center image and add spacing below */
-    max-width: 280px; /* Limit logo width */
-    height: auto; /* Maintain aspect ratio */
-}
+    /*  Logo Styling in Sign-Up Form  */
+    .signup-logo {
+        display: block; /* Ensure the logo is treated as a block element */
+        margin: 0 auto 20px; /* Center the logo and add spacing below it */
+        max-width: 280px; /* Restrict the maximum width of the logo */
+        height: auto; /* Maintain the aspect ratio */
+    }
 
-/* Form title */
-.signup-title {
-    font-family:'Times New Roman', Times, serif; /* Use a custom font for the title */
-    font-weight: normal;
-    font-size: 28px; /* Larger font size for emphasis */
-    color: #333; /* Dark text color */
-    margin-bottom: 20px; /* Space below the title */
-}
+    /*  Sign-Up Form Title  */
+    .signup-title {
+        font-family: 'Times New Roman', Times, serif; /* Set a classic font style */
+        font-weight: normal; /* Use normal font weight */
+        font-size: 28px; /* Set a large font size for the title */
+        color: #333; /* Dark gray text for readability */
+        margin-bottom: 20px; /* Add space below the title */
+    }
 
-/* Form structure */
-.signup-form {
-    display: flex; /* Flexbox for alignment */
-    flex-direction: column; /* Stack elements vertically */
-    gap: 25px; /* Add space between fields */
-}
+    /*  Structure of the Form Fields  */
+    .signup-form {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack form elements vertically */
+        gap: 25px; /* Add spacing between input fields */
+    }
 
-/* Form group (label + input) */
-.form-group {
-    text-align: left; /* Align labels and inputs to the left */
-}
+    /*  Form Group: Label + Input Fields  */
+    .form-group {
+        text-align: left; /* Align labels and input fields to the left */
+    }
 
-/* Labels */
-.form-group label {
-    font-size: 20px; /* Label font size */
-    color: #333; /* Dark text color for labels */
-    padding-left: 10px;
-}
+    /*  Labels for Input Fields  */
+    .form-group label {
+        font-size: 20px; /* Set the label font size */
+        color: #333; /* Dark gray color for contrast */
+        padding-left: 10px; /* Add slight left padding */
+    }
 
-/* Input fields */
-.input-field {
-    width: 95%; /* Almost full width */
-    padding: 10px; /* Inner padding for usability */
-    font-size: 14px; /* Text size in inputs */
-    border: 1px solid #ccc; /* Subtle border */
-    border-radius: 5px; /* Slightly rounded corners */
-    outline: none; /* Remove focus outline */
-}
+    /*  Input Fields Styling  */
+    .input-field {
+        width: 95%; /* Set width to almost full container */
+        padding: 10px; /* Add padding inside the input fields */
+        font-size: 14px; /* Font size for user-friendly input */
+        border: 1px solid #ccc; /* Light gray border for clarity */
+        border-radius: 5px; /* Slightly round the input field corners */
+        outline: none; /* Remove default browser outline */
+    }
 
-.input-field:focus {
-    border-color: #fa12b6; /* Highlighted border on focus */
-    box-shadow: 0 0 5px rgba(250, 18, 182, 0.5); /* Glow effect */
-}
+    /*  Input Field Focus (Highlight on Click)  */
+    .input-field:focus {
+        border-color: #fa12b6; /* Change border color to pink when focused */
+        box-shadow: 0 0 5px rgba(250, 18, 182, 0.5); /* Add a glowing effect */
+    }
 
-/* Error messages */
-.error-message {
-    font-size: 12px; /* Smaller font size */
-    color: red; /* Highlight errors in red */
-    margin-top: 5px; /* Add space above error message */
-}
+    /*  Error Message Display  */
+    .error-message {
+        font-size: 12px; /* Small font size for error messages */
+        color: red; /* Red text to highlight errors */
+        margin-top: 5px; /* Add slight space above the error message */
+    }
 
-/* Success message */
-.message-success {
-    font-size: 14px; /* Slightly larger font */
-    color: green; /* Green for success */
-    margin-bottom: 20px; /* Space below the message */
-}
+    /*  Success Message Display */
+    .message-success {
+        font-size: 14px; /* Slightly larger font for success messages */
+        color: green; /* Green text to indicate success */
+        margin-bottom: 20px; /* Space below the success message */
+    }
 
-/* Submit button */
-.signup-button {
-    width: 100%; /* Full width */
-    padding: 12px; /* Inner padding for button */
-    background-color: rgb(45, 17, 36); /* Dark purple background */
-    color: white; /* White text color */
-    font-size: 16px; /* Larger font size for readability */
-    text-transform: uppercase;
-    font-family: 'Gambetta', serif; /* Custom font for the button */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor for interactivity */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
+    /*  Submit Button Styling  */
+    .signup-button {
+        width: 100%; /* Make the button full width */
+        padding: 12px; /* Add padding inside the button */
+        background-color: rgb(45, 17, 36); /* Dark purple background */
+        color: white; /* White text for contrast */
+        font-size: 16px; /* Slightly larger font size for readability */
+        text-transform: uppercase; /* Convert text to uppercase */
+        font-family: 'Gambetta', serif; /* Use a custom serif font */
+        border: none; /* Remove default button borders */
+        border-radius: 5px; /* Slightly rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s ease; /* Add smooth hover transition */
+    }
 
-.signup-button:hover {
-    background-color: #621b4d; /* Slightly darker purple on hover */
-}
+    /*  Submit Button Hover Effect  */
+    .signup-button:hover {
+        background-color: #621b4d; /* Slightly darker purple when hovered */
+    }
 
 
-
-/* Responsive Adjustments for Smaller Screens */
+/*  Responsive Adjustments for Smaller Screens (Max width: 768px)  */
 @media (max-width: 768px) {
 
-   /* Hide Desktop Navigation */
+   /* Hide Desktop Navigation on Mobile */
    .home-bar {
-        display: none;  
+        display: none; /* Hide navigation bar on smaller screens */
     }
 
-    /* Show search box for mobile */
+    /* Show search box for mobile devices */
     .search-box {
-        display: flex; /* Ensure it is visible */
-        flex-direction: column; /* Stack elements */
-        align-items: center; /* Center align */
-        width: 80%; /* Full width */
-        padding: 10px;
+        display: flex; /* Ensure visibility */
+        flex-direction: column; /* Stack label and input vertically */
+        align-items: center; /* Center elements */
+        width: 80%; /* Reduce width for better mobile fit */
+        padding: 10px; /* Add spacing */
     }
 
-    /* Center the header container for small screens */
+    /* Stack header elements vertically */
     .header-container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; /* Arrange items in a vertical stack */
         gap: 10px; /* Add spacing between elements */
     }
 
-    /* Logo Styling */
+    /* Adjust logo size for mobile screens */
     .header-container img {
-        width: 300px; /* Resize logo for smaller screens */
+        width: 300px; /* Reduce logo width */
         height: auto; /* Maintain aspect ratio */
     }
 
-    /* Show Burger Menu Button */
+    /* Display Burger Menu Button for Mobile */
     .menu-button {
-        display: block; /* Ensure the button is visible on small screens */
-        position: absolute; /* Position it independently within the header */
-        top: 10px; /* Align it closer to the top of the viewport */
-        right: 20px; /* Align it closer to the right edge of the viewport */
+        display: block; /* Show menu button */
+        position: absolute; /* Position it independently */
+        top: 10px; /* Align near the top */
+        right: 20px; /* Position near the right edge */
         background: none; /* Remove any default background */
         border: none; /* Remove border */
-        cursor: pointer; /* Add pointer cursor for interactivity */
-        color: #333; /* Default color for the icon */
-        z-index: 1000; /* Ensure it appears above other elements */
+        cursor: pointer; /* Change cursor on hover */
+        color: #333; /* Default button color */
+        z-index: 1000; /* Ensure visibility above other elements */
     }
 
-
-    /* Show Burger Menu Button */
-    .menu-button {
-        display: block;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #333;
+    /* Mobile Navigation Menu Items */
+    .mobile-menu li {
+        padding: 10px 20px; /* Adjust spacing */
+        border-bottom: 1px solid #ddd; /* Add border for separation */
+        list-style-type: none; /* Remove default list bullets */
     }
     
-
-    .mobile-menu li {
-        padding: 10px 20px;
-        border-bottom: 1px solid #ddd;
-        list-style-type: none; /* Remove default list bullets */
-
-    }
-
+    /* Mobile Navigation Links */
     .mobile-menu li a {
-        text-decoration: none;
-        color: #333;
-        display: block;
-        font-size: 16px;
+        text-decoration: none; /* Remove underline */
+        color: #333; /* Set default link color */
+        display: block; /* Ensure proper spacing */
+        font-size: 16px; /* Adjust font size */
     }
 
+    /* Mobile Navigation Hover Effect */
     .mobile-menu li a:hover {
-        background: #f4f4f4;
+        background: #f4f4f4; /* Light gray hover effect */
     }
+
+    /* Remove border for last navigation item */
     .mobile-menu li:last-child {
-        border-bottom: none; /* Remove border for the last item */
+        border-bottom: none;
     }
+
+    /* Make images responsive */
     .images {
-        flex-wrap: wrap; /* Allow images to wrap to the next line if there are too many */
-        gap: 30px;
+        flex-wrap: wrap; /* Allow images to wrap to new line */
+        gap: 30px; /* Add spacing */
     }
 
+    /* Adjust image sizes for mobile */
     .images img {
-        width: 190px; /* Full-width images on mobile */
-        height: 200px;
-        max-width: 150px; /* Smaller images for mobile */
-        
-        
+        width: 190px; /* Reduce image width */
+        height: 200px; /* Adjust height */
+        max-width: 150px; /* Set max width for responsiveness */
     }
 
+    /* Reduce recipe name font size */
     .recipe-name {
         font-size: 16px;
         margin-bottom: 5%;
     }
     
+    /* Adjust heading sizes */
     #first-sentence {
         font-size: 20px;
         text-align: center;
         padding: 20px;
     }
+
+    /* Adjust recipe title */
     #Recipes {
         font-size: 20px;
         padding-left: 50px;
     }
+
+    /* Adjust sign-up form container for mobile */
     .signup-container {
-        width: 90%; /* Use most of the screen width */
-        padding: 15px; /* Reduce padding for smaller screens */
+        width: 90%; /* Expand form width */
+        padding: 15px; /* Reduce padding */
     }
 
+    /* Adjust logo size inside the form */
     .signup-logo {
         max-width: 150px; /* Reduce logo size */
     }
 
+    /* Adjust sign-up form title */
     .signup-title {
-        font-size: 20px; /* Smaller title size */
+        font-size: 20px; /* Reduce title font size */
     }
 
+    /* Adjust input fields for smaller screens */
     .input-field {
-        font-size: 12px; /* Adjust input text size */
+        font-size: 12px; /* Reduce input text size */
     }
 
+    /* Adjust button size for better touch interaction */
     .signup-button {
-        font-size: 14px; /* Slightly smaller button text */
+        font-size: 14px; /* Reduce button font size */
     }
 
+    /* Footer adjustments for mobile */
     .site-footer {
-        flex-direction: column; /* Stack all sections vertically */
-        align-items: center; /* Center align all items */
-        
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center-align elements */
     }
 
+    /* Adjust footer links spacing */
     .footer-links {
-        margin-bottom: 20px; /* Add space below */
+        margin-bottom: 20px;
         margin-top: 10%;
-        margin: 0;
         max-width: 490px;
     }
+
+    /* Adjust footer link list */
     .footer-links ul {
         gap: 13px;
     }
 
+    /* Center the footer search section */
     .footer-search {
-        text-align: center; /* Center align everything */
-        padding: 0 10px; /* Add some padding for smaller screens */
+        text-align: center;
+        padding: 0 10px;
         width: 100%;
     }
 
-    .footer-logo{
+    /* Center the footer logo */
+    .footer-logo {
         align-items: center;
         margin: 0;
     }
 
+    /* Add spacing above copyright section */
     .footer-copyright {
-        margin-top: 20px; /* Add space above */
+        margin-top: 20px;
     }
 }
 
-
-/* Responsive Adjustments for Tablet Screens (768px - 1024px) */
+/*  Responsive Adjustments for Tablet Screens (768px - 1024px)  */
 @media (min-width: 768px) and (max-width: 1100px) {
+
+    /* Adjust logo size for tablets */
     #logo {
-        font-size: 45px; /* Adjust logo size for tablets */
+        font-size: 45px;
         padding: 15px;
     }
 
+    /* Keep navigation bar in a row */
     .navigation-bar {
-        flex-direction: row; /* Keep navigation items in a row */
+        flex-direction: row;
         padding: 10px;
         justify-content: flex-start;
         align-items: center;
     }
 
+    /* Adjust navigation links */
     .home-bar {
-        gap: 20px; /* Adjust spacing between navigation links */
-        font-size: 22px; /* Slightly smaller font size for tablets */
+        gap: 20px;
+        font-size: 22px; /* Reduce font size for better spacing */
         justify-content: flex-start; /* Align links to the left */
     }
+
+    /* Adjust navigation links font size */
     .home-bar a {
         font-size: 22px;
     }
 
+    /* Align search box horizontally */
     .search-box {
-        flex-direction: row; /* Align search label and box horizontally */
+        flex-direction: row;
         margin-top: 0;
-        margin-right: 20px;/* Push search box to the right*/
+        margin-right: 20px; /* Push search box to the right */
         align-items: center;
         gap: 10px;
         padding-left: 8px;
         width: 130px;
     }
 
+    /* Adjust search label size */
     .search-label {
-        font-size: 22px; /* Adjust label font size */
+        font-size: 22px;
         padding: 0;
-        
-        
     }
 
+    /* Adjust search input width */
     .search-input {
-        width: 200px; /* Adjust input box width for tablets */
+        width: 200px;
     }
 
+    /* Adjust images for tablets */
     .images img {
-        width: 200px; /* Adjust image size for tablets */
+        width: 200px;
         height: 250px;
     }
 
+    /* Adjust recipe name font size */
     .recipe-name {
-        font-size: 18px; /* Adjust font size for recipe names */
+        font-size: 18px;
     }
 
+    /* Adjust text size for headings */
     #first-sentence {
-        font-size: 22px; /* Adjust text size for tablets */
+        font-size: 22px;
         padding: 25px;
     }
 
+    /* Adjust recipe title size */
     #Recipes {
-        font-size: 22px; /* Adjust section title size */
-        padding-left: 80px; /* Reduce padding for tablet screens */
+        font-size: 22px;
+        padding-left: 80px;
     }
 }
 
-/* --- Desktop Styles (min-width: 768px) --- */
+/*  Desktop Styles (min-width: 768px)  */
 @media (min-width: 768px) {
     
-    /* Hide Burger Menu Button */
+    /* Hide the burger menu button on larger screens */
     .menu-button {
         display: none;
     }
 
-    /* Ensure Mobile Menu is Hidden */
+    /* Ensure mobile menu is hidden */
     .mobile-menu {
         display: none;
     }

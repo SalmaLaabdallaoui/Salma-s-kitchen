@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 const SearchBox = () => {
   // Recipe list with names and paths
@@ -50,10 +50,10 @@ const SearchBox = () => {
   };
 
   return (
-    <div className="search-box" style={{ position: "relative" }}>
-      <label htmlFor="recipe-search" className="search-label"></label>
+    <div className="search-box" style={{ position: "relative" }}> 
+      <label htmlFor="recipe-search" className="search-label"></label> 
       <input
-        type="text"
+        type="text" 
         id="recipe-search"
         className="search-input"
         placeholder="🔍   Browse recipes"

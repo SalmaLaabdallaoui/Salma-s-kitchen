@@ -1,8 +1,8 @@
 import React from 'react';
-import RecipeTemplate from '../../components/RecipeTemplate';
+import RecipeTemplate from '../../components/RecipeTemplate'; // Import the RecipeTemplate component
 
-function ShrimpSalad() {
-  const ingredients = [
+function ShrimpSalad() { // Create the ShrimpSalad component
+  const ingredients = [ // Create the ingredients array
     '• 1 avocado',
     '• a handful of lettuce (optional)',
     '• 150 g shrimp',
@@ -14,7 +14,7 @@ function ShrimpSalad() {
     '• 1/2 tsp salt',
   ];
 
-  const instructions = [
+  const instructions = [ // Create the instructions array
     'Begin by slicing your avocados and lettuce (if you desire to use it) thinly, then mix them with 1/4 the knorr package and 1 tbsp olive oil.',
     'Grill your shrimp on medium high heat with the remaining 1 tbsp of olive oil, 1/4 package of knorr, paprika powder, garlic powder, salt and pepper.',
     'Grill the shrimp until it has absorbed all its liquid.',
@@ -24,16 +24,16 @@ function ShrimpSalad() {
   ];
 
   return (
-    <RecipeTemplate
+    <RecipeTemplate // Return the RecipeTemplate component
       title="Shrimp Salad"
       description="A simple and healthy shrimp salad recipe with spiced shrimp, creamy avocado, and a hint of salad spice. Perfect as a starter or light meal."
       imagePath="/images/shrimpsalad.jpg"
       prepTime="10 minutes"
       cookTime="15 minutes"
       servings="2"
-      totalTime="25 minutes"
-      ingredients={ingredients}
-      instructions={instructions}
+      totalTime="25 minutes" 
+      ingredients={ingredients} 
+      instructions={instructions} 
     />
   );
 }
