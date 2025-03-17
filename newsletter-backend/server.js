@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail', // Use Gmail as the email service
   auth: {
     user: 'salmazouiten0222@gmail.com', // Your Gmail address
-    pass: 'ohll jswg xwqa efnb',          // app password
+    pass: process.env.EMAIL_PASS,          // app password
   },
 });
 
@@ -54,9 +54,8 @@ app.post("/contact", async (req, res) => {
 const pb = new PocketBase("http://127.0.0.1:8090");
 
 // Configure SendGrid
-const SENDGRID_API_KEY = "SG.qhhWwzziR9GNhKiWJkQdug.JPjaoFkELm5ERGQkUokU3x5yBGWfAEuBzoSsRB5QWG4";
-sgMail.setApiKey(SENDGRID_API_KEY); // Set the SendGrid API key
-console.log("SendGrid API Key:", SENDGRID_API_KEY ? "Loaded" : "Missing"); // Log the API key status
+sgMail.setApiKey(process.env.SENDGRID_API_KEY); // Set the SendGrid API key
+console.log("SendGrid API Key:", process.env.SENDGRID_API_KEY ? "Loaded" : "Missing"); // Log the API key status
 
 // API Endpoint to Handle Signups
 app.post("/signup", async (req, res) => { 
