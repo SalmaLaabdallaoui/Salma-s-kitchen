@@ -30,6 +30,10 @@ npm -v   # Should return a version number
 mv ~/Downloads/pocketbase newsletter-backend/  # Adjust the path if needed based upon where Pocketbase got downloaded in your system
 ```
 
+**PocketBase Credentials**
+Email Address: [salma.zouiten@iu-study.org]
+Password: [Salmaskitchen2025*]
+
 ---
 
 ## **🚀 Installation Instructions**
@@ -39,7 +43,9 @@ After extracting the repository, open VS Code, or other code editor and open the
 ### **1️⃣ Install Frontend Dependencies**
 
 ```bash
+npm install
 cd salma-s-kitchen #path to frontend
+npm install vite --save-dev
 npm install #installs all the dependencies within my package.json file, to deploy the app
 ```
 
