@@ -69,7 +69,7 @@ node server.js # Starts the backend API
 ```bash
 cd newsletter-backend #navigate to backend again
 chmod +x pocketbase  # Grants execution permissions
-cp pb_data/data_backup_2025-02-06.db pb_data/data.db #initialize PocketBase from Backup
+cp pb_data/data_backup_2025-03-17.db pb_data/data.db #initialize PocketBase from Backup
 chmod 777 pb_data/data.db  # Set correct permissions
 pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, click on it and it will open-up in a web browser
 ```
