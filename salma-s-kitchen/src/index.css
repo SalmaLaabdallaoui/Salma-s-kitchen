@@ -88,7 +88,7 @@ body, html {
     /* Footer Links List */
     .footer-links ul {
         display: flex; /* Aligns links horizontally */
-        list-style: none; /* Removes bullet points */
+        list-style: none; /* Removes the bullet points */
         padding: 0; /* Removes default padding */
         gap: 30px; /* Adds space between list items */
         flex-direction: row; /* Ensures horizontal alignment */
