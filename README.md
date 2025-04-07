@@ -15,6 +15,7 @@ Before installing and running the Web application, the following must be install
 
 ```bash
 node -v  # Should return a version number
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # for Windows
 npm -v   # Should return a version number
 ```
 
@@ -43,40 +44,39 @@ After extracting the repository, open VS Code, or other code editor and open the
 ### **1️⃣ Install Frontend Dependencies**
 
 ```bash
-npm install
+
 cd salma-s-kitchen #path to frontend
 npm install vite --save-dev
+npm install react-router-dom
+npm install pocketbase
 npm install #installs all the dependencies within my package.json file, to deploy the app
 ```
 
 ### **2️⃣ Install Backend dependencies**
 
 ```bash
+cd ..
 cd newsletter-backend #path to backend
 npm install # Installs Express, Nodemailer, SendGrid, PocketBase, and dependencies needed for the backend to run
-node server.js # Starts the backend API
-```
-
-### **3️⃣ Set-up Backend**
-
-```bash
-cd newsletter-backend #path to backend
+npm install pocketbase
 node server.js # Starts the backend API
 ```
 
 ### **4️⃣ set-up Pocketbase in Backend**
 
 ```bash
+#open in a new terminal window and run the following one after the other
 cd newsletter-backend #navigate to backend again
 chmod +x pocketbase  # Grants execution permissions
 cp pb_data/data_backup_2025-03-17.db pb_data/data.db #initialize PocketBase from Backup
 chmod 777 pb_data/data.db  # Set correct permissions
-pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, click on it and it will open-up in a web browser
+pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, click on it and it will open-up in a web browser on mac or .\pocketbase serve for windows
 ```
 
 ### **5️⃣ Start Web App**
 
 ```bash
+# open a new terminal
 cd salma-s-kitchen
 npm run dev #runs the web app, the output is a link similar to [http://localhost:5173/], that must be inputed in a web browser
 ```
