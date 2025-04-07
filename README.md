@@ -25,6 +25,7 @@ npm -v   # Should return a version number
 - Extract the downloaded zip file.
 - The downloaded PocketBase Executable must be placed into The Backend Folder
 - Manually drag and drop the pocketbase executable into the newsletter-backend/ folder in VS Code's file Explorer, or in the backend folder within the GitHub repository file.
+- the pocketbase.exe app must be clicked on to run and right clicked on and select "Run as administrator" for Windows users.
 - For Mac/Linux: the following command can also be run
 
 ```bash
@@ -37,9 +38,9 @@ Password: [Salmaskitchen2025*]
 
 ---
 
-## **🚀 Installation Instructions**
+## **🚀 Installation Instructions for Mac**
 
-After extracting the repository, open VS Code, or other code editor and open the project folder. Follow these steps to set up and run the project:
+After extracting the repository, open VS Code, or other code editor and open the project folder, preferrably VS Code. Follow these steps to set up and run the project:
 
 ### **1️⃣ Install Frontend Dependencies**
 
@@ -59,24 +60,69 @@ cd ..
 cd newsletter-backend #path to backend
 npm install # Installs Express, Nodemailer, SendGrid, PocketBase, and dependencies needed for the backend to run
 npm install pocketbase
-node server.js # Starts the backend API
 ```
 
-### **4️⃣ set-up Pocketbase in Backend**
+### **3️⃣ set-up Pocketbase in Backend**
 
 ```bash
-#open in a new terminal window and run the following one after the other
-cd newsletter-backend #navigate to backend again
 chmod +x pocketbase  # Grants execution permissions
 cp pb_data/data_backup_2025-03-17.db pb_data/data.db #initialize PocketBase from Backup
 chmod 777 pb_data/data.db  # Set correct permissions
-pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, click on it and it will open-up in a web browser on mac or .\pocketbase serve for windows
+pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, copy the Dashboard link in the browser and and fill in the credentials listed above.
 ```
 
-### **5️⃣ Start Web App**
+### **4️⃣ Start Web App**
 
 ```bash
-# open a new terminal
-cd salma-s-kitchen
+# open a new terminal window and run the following
+cd newsletter-backend #Path to the backend
+node server.js #Starts the backend server
+# open a new terminal window and run the following
+cd salma-s-kitchen #path to the frontend
+npm run dev #runs the web app, the output is a link similar to [http://localhost:5173/], that must be inputed in a web browser
+```
+
+---
+
+## **🚀 Installation Instructions for Windows**
+
+After extracting the repository, open VS Code, or other code editor and open the project folder, preferrably VS Code. Follow these steps to set up and run the project:
+
+### **1️⃣ Install Frontend Dependencies**
+
+```bash
+
+cd salma-s-kitchen #path to frontend
+npm install vite --save-dev
+npm install react-router-dom
+npm install pocketbase
+npm install #installs all the dependencies within my package.json file, to deploy the app
+```
+
+### **2️⃣ Install Backend dependencies**
+
+```bash
+cd ..
+cd newsletter-backend #path to backend
+npm install # Installs Express, Nodemailer, SendGrid, and dependencies needed for the backend to run
+npm install pocketbase
+```
+
+### **3️⃣ set-up Pocketbase in Backend**
+
+```bash
+
+cp pb_data/data_backup_2025-03-17.db pb_data/data.db #initialize PocketBase from Backup
+.\pocketbase serve #Starts Pocketbase server, you will receive a link in the terminal, copy the Dashboard link in the browser and and fill in the credentials listed above.
+```
+
+### **4️⃣ Start Web App**
+
+```bash
+# open a new terminal window and run the following
+cd newsletter-backend #Path to the backend
+node server.js #Starts the backend server
+# open a new terminal window and run the following
+cd salma-s-kitchen #path to the frontend
 npm run dev #runs the web app, the output is a link similar to [http://localhost:5173/], that must be inputed in a web browser
 ```
