@@ -45,7 +45,7 @@ Password: [Salmaskitchen2025*]
 
 After extracting the repository, and placing the Pocketbase executable in the newsletter-backend folder, open VS Code, or other code editor and open the project folder, preferrably VS Code. Follow these steps to set up and run the project:
 
-- First, navigate to the 'File' menu in VSCode, then click on 'Open Folder' and open the extracted GitHub folder. After that, open a new terminal window and execute the following lines of code one by one (copy then paste the first line of code after (```bash) , press enter, then copy and paste the next line of code, following the instructions until the end).
+- First, navigate to the 'File' menu in VSCode, then click on 'Open Folder' and open the extracted GitHub folder. After that, open a new terminal window and execute the following lines of code one by one (copy then paste the first line of code after (```bash) , press enter, then copy and paste the next line of code, following the instructions until the end)..
 
 ## **🚀 Installation Instructions for Mac**
 
