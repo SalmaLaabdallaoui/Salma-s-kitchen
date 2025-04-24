@@ -24,13 +24,18 @@ npm -v   # Should return a version number
 - Download PocketBase from [https://pocketbase.io/]
 - Extract the downloaded zip file.
 - The downloaded PocketBase Executable must be placed into The Backend Folder
-- Manually drag and drop the pocketbase executable into the newsletter-backend/ folder in VS Code's file Explorer, or in the backend folder within the GitHub repository file.
-- the pocketbase.exe app must be clicked on to run and right clicked on and select "Run as administrator" for Windows users.
-- For Mac/Linux: the following command can also be run
+- Manually drag and drop the pocketbase executable into the newsletter-backend/ folder in the backend folder within the GitHub repository file.
 
-```bash
-mv ~/Downloads/pocketbase newsletter-backend/  # Adjust the path if needed based upon where Pocketbase got downloaded in your system
-```
+* For Windows users: Right-click on the pocketbase.exe file and select "Run as administrator" to launch the app.
+* For Mac users: After placing the pocketbase executable into the newsletter-backend/ folder:
+
+  - You will first be asked whether to keep or replace the PocketBase executable. Click on Replace.
+    then:
+  - Go to System Settings.
+  - Click on Privacy & Security.
+  - Scroll down and click "Allow" to enable the Pocketbase app to run.
+
+  (It’s possible that the 'Allow' setting in Privacy & Security won’t appear until you attempt to execute ./pocketbase serve in the terminal on macOS.)
 
 **PocketBase Credentials**
 Email Address: [salma.zouiten@iu-study.org]
@@ -38,9 +43,11 @@ Password: [Salmaskitchen2025*]
 
 ---
 
-## **🚀 Installation Instructions for Mac**
+After extracting the repository, and placing the Pocketbase executable in the newsletter-backend folder, open VS Code, or other code editor and open the project folder, preferrably VS Code. Follow these steps to set up and run the project:
 
-After extracting the repository, open VS Code, or other code editor and open the project folder, preferrably VS Code. Follow these steps to set up and run the project:
+- First, navigate to the 'File' menu in VSCode, then click on 'Open Folder' and open the extracted GitHub folder. After that, open a new terminal window and execute the following lines of code one by one (copy then paste the first line of code after (```bash) , press enter, then copy and paste the next line of code, following the instructions until the end).
+
+## **🚀 Installation Instructions for Mac**
 
 ### **1️⃣ Install Frontend Dependencies**
 
@@ -68,7 +75,7 @@ npm install pocketbase
 chmod +x pocketbase  # Grants execution permissions
 cp pb_data/data_backup_2025-03-17.db pb_data/data.db #initialize PocketBase from Backup
 chmod 777 pb_data/data.db  # Set correct permissions
-pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, copy the Dashboard link in the browser and and fill in the credentials listed above.
+./pocketbase serve # Start Pocketbase server, you will receive a link in the terminal, copy the Dashboard link in the browser and and fill in the credentials listed above.
 ```
 
 ### **4️⃣ Start Web App**
@@ -85,8 +92,6 @@ npm run dev #runs the web app, the output is a link similar to [http://localhost
 ---
 
 ## **🚀 Installation Instructions for Windows**
-
-After extracting the repository, open VS Code, or other code editor and open the project folder, preferrably VS Code. Follow these steps to set up and run the project:
 
 ### **1️⃣ Install Frontend Dependencies**
 
