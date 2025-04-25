@@ -54,7 +54,7 @@ app.post("/contact", async (req, res) => {
 const pb = new PocketBase("http://127.0.0.1:8090");
 
 // Configure SendGrid
-const SENDGRID_API_KEY = "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";
+const SENDGRID_API_KEY = "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";
 sgMail.setApiKey(SENDGRID_API_KEY);  // Set the SendGrid API key
 console.log("SendGrid API Key:", SENDGRID_API_KEY ? "Loaded" : "Missing");  // Log the API key status
 
