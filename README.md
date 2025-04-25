@@ -24,10 +24,10 @@ npm -v   # Should return a version number
 - Download PocketBase from [https://pocketbase.io/]
 - Extract the downloaded zip file.
 - The downloaded PocketBase Executable must be placed into The Backend Folder
-- Manually drag and drop the pocketbase executable into the newsletter-backend/ folder in the backend folder within the GitHub repository file.
+- Manually drag and drop the pocketbase executable into the newsletter-backend folder which is the backend folder within the GitHub repository file.
 
 * For Windows users: Right-click on the pocketbase.exe file and select "Run as administrator" to launch the app.
-* For Mac users: After placing the pocketbase executable into the newsletter-backend/ folder:
+* For Mac users: After placing the pocketbase executable into the "newsletter-backend" folder:
 
   - You will first be asked whether to keep or replace the PocketBase executable. Click on Replace.
     then:
