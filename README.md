@@ -48,7 +48,7 @@ After extracting the repository, and placing the Pocketbase executable in the ne
 - Open VSCode and navigate to the File menu.
 - Select Open Folder, then choose the extracted GitHub folder.
 - Open a new terminal window in VSCode.
-- Copy the lines of code listed betweeen the line marked with `bash and `, then paste thm into the terminal one at a time, pressing Enter after each one.
+- Copy the lines of code listed betweeen the line marked with `bash and `, then paste them into the terminal one at a time, pressing Enter after each one.
 - Continue this process for all the steps until all lines are entered, following the instructions provided.
 
 ## **🚀 Installation Instructions for Mac**
